@@ -39,4 +39,11 @@ xl21gtar.img should normally have its c-files within a directory "sources" under
 
 My deep gratitude goes to David Betz and Thomas Almy, and all their helpers, for having created this amazing piece of software in the first place.
 
+--------------
+
+Update: added the Xenix-2.3.1-compiled binary of the LISP system, "xlisp.bin". This will also run under other Unix System V variants such as Unixware 1.0. The floppy image contains xlisp.bin "placed onto binary zeroes, up to the size of a standard 1.44MB floppy". You can then "insert" the "floppy" into your emulator and "dd" the binary straight from it, with something like:
+
+dd if=/dev/dsk/f0 of=xlisp bs=128 count=2453
+
+
 
